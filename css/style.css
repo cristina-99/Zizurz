@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
+body {
+  background-color: #EDEDED;
+}
+
+header {
+  background-color: #4C8F96;
+}
+header nav a {
+  color: #fff;
+  background-color: #1B2130;
+}
+header h1 {
+  background-color: #222942;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.great-hairstyle {
+  background-color: #fff;
+  border: 2px solid #4C8F96;
+}
+.great-hairstyle .great-hair {
+  font-family: "Changa One", cursive;
+}
+
+.hairstyle__item img {
+  border: 5px solid #4C8F96;
+  border-radius: 5px;
+}
+
+.pageWidth {
+  max-width: 876px;
+  width: 100%;
+}
+
+.featured {
+  border: 5px solid #5FB3BD;
+  border-radius: 5px;
+}
+.featured__title {
+  background-color: #222942;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+  width: 150px;
+}
+
+.hairstyle__items {
+  border: 5px solid #5FB3BD;
+  border-radius: 5px;
+  background-color: #519194;
+  color: #fff;
+}
+
+.recent-news {
+  border: 5px solid #4C8F96;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.recent-news h2 {
+  font-family: "Comfortaa", cursive;
+}
+
+footer {
+  background-color: #4C8F96;
+  color: #fff;
+}
+footer .icons {
+  background-color: #387A82;
+}
+footer .icons span i {
+  color: #1B6068;
+  margin: 10px;
+}
+
+.topnav.showMenu {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

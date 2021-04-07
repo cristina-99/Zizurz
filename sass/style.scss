@@ -1,0 +1,122 @@
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+body{
+    background-color: $background-color;
+}
+header{
+    background-color: $header-color;
+    nav a{
+        color: $white;
+        background-color: $color-text;
+    }
+    h1{
+        background-color: $button-color;
+        color: $white;
+    }
+}
+
+*{
+    box-sizing: border-box;
+} 
+
+.great-hairstyle{
+    background-color: $white;
+    border: 2px solid $header-color;
+    .great-hair{
+    font-family: 'Changa One', cursive;
+}
+}
+.hairstyle{
+    &__item{
+        img{
+            border: 5px solid $header-color;
+            border-radius: 5px;
+        }
+    }
+}
+
+.pageWidth{
+max-width: 876px;
+width:100%;
+
+}
+.featured{
+    border: 5px solid $border;
+    border-radius: 5px;
+    &__title{
+    background-color: $button-color;
+    color: $white;
+    font-family: 'Comfortaa', cursive;
+    width: 150px;
+
+}
+}
+.hairstyle{
+    &__items{
+        border: 5px solid $border;
+        border-radius: 5px;
+        background-color: #519194;
+        color: $white;
+    }
+}
+
+// Page News
+.recent-news{
+    border: 5px solid $header-color;
+    border-radius: 5px;
+    background-color: $white;
+    h2{
+        font-family: 'Comfortaa', cursive;
+    }
+}
+footer{
+     background-color: $header-color;
+     color: $white;
+     .icons{
+         background-color: $background-icons;
+         span i{
+             color: $color-icons;
+             margin: 10px;
+         }
+     }
+ }
+
+.topnav.showMenu{
+    display:block;
+    position: absolute;
+    top:50px;
+    right:0px;
+}
+.icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .icon{
+        display: block;
+    }
+    .topnav{
+        display: none;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+  
